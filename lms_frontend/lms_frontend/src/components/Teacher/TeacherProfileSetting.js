@@ -1,0 +1,46 @@
+import {Link} from 'react-router-dom'
+import TeacherSidebar from './TeacherSidebar';
+
+
+function TeacherProfileSetting() {
+    return (
+      <div className='container mt-4'>
+        <div className='row'>
+            <aside className='col-md-3'>
+                <TeacherSidebar />
+            </aside>
+
+            <section className='col-md-9'>
+            <div className='card'>
+                <h5 className='card-header'>Profile Setting</h5>          
+                <div className='card-body'></div>      
+                <form>
+                <div className="form-group ms-1 mb-3">
+                    <label for="fullname">Full Name</label>
+                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name"/>
+                </div>
+                <div className="form-group ms-1 mb-3">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                </div>
+                <div className="form-group ms-1 mb-3">
+                    <label for="profilpic">Profil Picture</label>
+                    <input type="file" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                </div>
+                <div className="form-group ms-1 mb-3">
+                    <label for="exampleInputEmail1">Skills</label>
+                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Interest"/>
+                </div>
+              
+                <button type="submit" className="btn btn-primary m-1">Submit</button>
+                </form>
+            </div>
+            </section>
+        </div>
+
+      </div>
+    )
+  }
+  
+  export default TeacherProfileSetting;
+  
